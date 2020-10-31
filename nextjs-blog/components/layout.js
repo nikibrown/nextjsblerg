@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
 const name = 'Niki Brown'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'My awesome Next.js blerg'
 
 export default function Layout({ children, home }) {
   return (
@@ -27,11 +27,8 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <img src="https://avatars0.githubusercontent.com/u/284173?s=460&u=9f67ef4e2fbc5d7925968a762f92e80a4cf25623&v=4" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+            alt={name} />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
